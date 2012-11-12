@@ -85,7 +85,7 @@ static struct ft5x06_platform_data ft5x06_platform_data = {
 
 static struct i2c_board_info __initdata sdp4430_i2c_2_boardinfo[] = {
         {
-                I2C_BOARD_INFO(FT_I2C_NAME, FT5x06_I2C_SLAVEADDRESS),
+                I2C_BOARD_INFO(FT_DEVICE_5x06_NAME, FT5x06_I2C_SLAVEADDRESS),
                 .platform_data = &ft5x06_platform_data,
                 .irq = OMAP_GPIO_IRQ(OMAP_FT5x06_GPIO),
         },
